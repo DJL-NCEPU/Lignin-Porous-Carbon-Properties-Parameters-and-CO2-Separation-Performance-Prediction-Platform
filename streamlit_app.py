@@ -702,189 +702,189 @@ MODEL_ROOT = Path("models")
 # ============================================================
 MODEL_FILES = {
     "CO2": {
-        "model": Path("CO2/CO2.pkl"),
-        "scaler": Path("CO2/scaler-CO2.pkl"),
+        "model": Path("Physicochemical Properties–Adsorption Performance/CO2/CO2.pkl"),
+        "scaler": Path("Physicochemical Properties–Adsorption Performance/CO2/scaler-CO2.pkl"),
     },
 
     "H2O": {
-        "model": Path("H2O/H2O.pkl"),
-        "scaler": Path("H2O/scaler-H2O.pkl"),
+        "model": Path("Physicochemical Properties–Adsorption Performance/H2O/H2O.pkl"),
+        "scaler": Path("Physicochemical Properties–Adsorption Performance/H2O/scaler-H2O.pkl"),
     },
 
     "N2": {
-        "model": Path("N2/N2.pkl"),
-        "scaler": Path("N2/scaler-N2.pkl"),
+        "model": Path("Physicochemical Properties–Adsorption Performance/N2/N2.pkl"),
+        "scaler": Path("Physicochemical Properties–Adsorption Performance/N2/scaler-N2.pkl"),
     },
 
     "CO2_H2O": {
-        "model": Path("CO2-H2O/CO2-H2O.pkl"),
-        "scaler": Path("CO2-H2O/scaler-CO2-H2O.pkl"),
+        "model": Path("Physicochemical Properties–Adsorption Performance/CO2-H2O/CO2-H2O.pkl"),
+        "scaler": Path("Physicochemical Properties–Adsorption Performance/CO2-H2O/scaler-CO2-H2O.pkl"),
     },
 
     "CO2_N2": {
-        "model": Path("CO2-N2/CO2-N2.pkl"),
-        "scaler": Path("CO2-N2/scaler-CO2-N2.pkl"),
+        "model": Path("Physicochemical Properties–Adsorption Performance/CO2-N2/CO2-N2.pkl"),
+        "scaler": Path("Physicochemical Properties–Adsorption Performance/CO2-N2/scaler-CO2-N2.pkl"),
     },
 
     "SBET": {
         "model": Path(
-            "制备/SBET/model-SBET.pkl"
+            "Preparation Parameters–Physicochemical Properties/SBET/model-SBET.pkl"
         ),
 
         "scaler": Path(
-            "制备/SBET/scaler-SBET.pkl"
+            "Preparation Parameters–Physicochemical Properties/SBET/scaler-SBET.pkl"
         ),
     },
 
     "Vt": {
         "model": Path(
-            "制备/Vt/model-Vt.pkl"
+            "Preparation Parameters–Physicochemical Properties/Vt/model-Vt.pkl"
         ),
 
         "scaler": Path(
-            "制备/Vt/scaler-Vt.pkl"
+            "Preparation Parameters–Physicochemical Properties/Vt/scaler-Vt.pkl"
         ),
     },
 
     "Vmes": {
         "model": Path(
-            "制备/Vmes/model-Vmes.pkl"
+            "Preparation Parameters–Physicochemical Properties/Vmes/model-Vmes.pkl"
         ),
 
         "scaler": Path(
-            "制备/Vmes/scaler-Vmes.pkl"
+            "Preparation Parameters–Physicochemical Properties/Vmes/scaler-Vmes.pkl"
         ),
     },
 
     "Vm": {
         "model": Path(
-            "制备/Vm/model-Vm.pkl"
+            "Preparation Parameters–Physicochemical Properties/Vm/model-Vm.pkl"
         ),
 
         "scaler": Path(
-            "制备/Vm/scaler--Vm.pkl"
+            "Preparation Parameters–Physicochemical Properties/Vm/scaler--Vm.pkl"
         ),
     },
 
     "Vn": {
         "model": Path(
-            "制备/Vn/model-Vn.pkl"
+            "Preparation Parameters–Physicochemical Properties/Vn/model-Vn.pkl"
         ),
 
         "scaler": Path(
-            "制备/Vn/scaler-Vn.pkl"
+            "Preparation Parameters–Physicochemical Properties/Vn/scaler-Vn.pkl"
         ),
     },
 
     "Total N": {
         "model": Path(
-            "制备/Total N/model-Total N.pkl"
+            "Preparation Parameters–Physicochemical Properties/Total N/model-Total N.pkl"
         ),
 
         "scaler": Path(
-            "制备/Total N/scaler-Total N.pkl"
+            "Preparation Parameters–Physicochemical Properties/Total N/scaler-Total N.pkl"
         ),
     },
 
     "Pyridinic-N fraction": {
         "model": Path(
-            "制备/Pyridinic-N/"
+            "Preparation Parameters–Physicochemical Properties/Pyridinic-N/"
             "model-Pyridinic-N.pkl"
         ),
 
         "scaler": Path(
-            "制备/Pyridinic-N/"
+            "Preparation Parameters–Physicochemical Properties/Pyridinic-N/"
             "scaler-Pyridinic-N.pkl"
         ),
     },
 
     "Pyrrolic-N/Pyridonic-N fraction": {
         "model": Path(
-            "制备/Pyrrolic-N_Pyridonic-N/"
+            "Preparation Parameters–Physicochemical Properties/Pyrrolic-N_Pyridonic-N/"
             "model-Pyrrolic-N _ Pyridonic-N.pkl"
         ),
 
         "scaler": Path(
-            "制备/Pyrrolic-N_Pyridonic-N/"
+            "Preparation Parameters–Physicochemical Properties/Pyrrolic-N_Pyridonic-N/"
             "scaler-Pyrrolic-N _ Pyridonic-N.pkl"
         ),
     },
 
     "Graphitic-N fraction": {
         "model": Path(
-            "制备/Graphitic-N/"
+            "Preparation Parameters–Physicochemical Properties/Graphitic-N/"
             "model-Graphitic-N.pkl"
         ),
 
         "scaler": Path(
-            "制备/Graphitic-N/"
+            "Preparation Parameters–Physicochemical Properties/Graphitic-N/"
             "scaler-Graphitic-N.pkl"
         ),
     },
 
     "Oxidized-N fraction": {
         "model": Path(
-            "制备/Oxidized-N/"
+            "Preparation Parameters–Physicochemical Properties/Oxidized-N/"
             "model-Oxidized-N.pkl"
         ),
 
         "scaler": Path(
-            "制备/Oxidized-N/"
+            "Preparation Parameters–Physicochemical Properties/Oxidized-N/"
             "scaler-Oxidized-N.pkl"
         ),
     },
 
     "Total O": {
         "model": Path(
-            "制备/Total O/model-Total O.pkl"
+            "Preparation Parameters–Physicochemical Properties/Total O/model-Total O.pkl"
         ),
 
         "scaler": Path(
-            "制备/Total O/scaler-Total O.pkl"
+            "Preparation Parameters–Physicochemical Properties/Total O/scaler-Total O.pkl"
         ),
     },
 
     "C=O fraction": {
         "model": Path(
-            "制备/C=O/model-C=O.pkl"
+            "Preparation Parameters–Physicochemical Properties/C=O/model-C=O.pkl"
         ),
 
         "scaler": Path(
-            "制备/C=O/scaler-C=O.pkl"
+            "Preparation Parameters–Physicochemical Properties/C=O/scaler-C=O.pkl"
         ),
     },
 
     "C-O/C-OH fraction": {
         "model": Path(
-            "制备/C-O_C-OH/"
+            "Preparation Parameters–Physicochemical Properties/C-O_C-OH/"
             "model-C-O-C-OH.pkl"
         ),
 
         "scaler": Path(
-            "制备/C-O_C-OH/"
+            "Preparation Parameters–Physicochemical Properties/C-O_C-OH/"
             "scaler-C-O-C-OH.pkl"
         ),
     },
 
     "O-C=O/-COOH fraction": {
         "model": Path(
-            "制备/O-C=O_-COOH/"
+            "Preparation Parameters–Physicochemical Properties/O-C=O_-COOH/"
             "model-O-C=O_-COOH.pkl"
         ),
 
         "scaler": Path(
-            "制备/O-C=O_-COOH/"
+            "Preparation Parameters–Physicochemical Properties/O-C=O_-COOH/"
             "scaler-O-C=O_-COOH.pkl"
         ),
     },
 
     "WCA": {
         "model": Path(
-            "制备/WCA/model-WCA.pkl"
+            "Preparation Parameters–Physicochemical Properties/WCA/model-WCA.pkl"
         ),
 
         "scaler": Path(
-            "制备/WCA/scaler-WCA.pkl"
+            "Preparation Parameters–Physicochemical Properties/WCA/scaler-WCA.pkl"
         ),
     },
 }
