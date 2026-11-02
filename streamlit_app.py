@@ -1694,19 +1694,13 @@ def fraction_to_percent(
     return value
 
 
-def optional_normalize_to_100(
+def normalize_to_100(
     values: dict,
-    enabled: bool,
 ):
 
     out = dict(
         values
     )
-
-
-    if not enabled:
-
-        return out
 
 
     total = sum(
@@ -1748,7 +1742,6 @@ def predict_properties(
     rkoh_l,
     tn,
     rn_ac,
-    simple_closure=False,
 ):
 
     prep_values = {
@@ -1847,15 +1840,15 @@ def predict_properties(
     }
 
 
-    n_frac = optional_normalize_to_100(
+    # Automatically normalize predicted N/O functional-group fractions
+    # so that each elemental speciation sums to 100%.
+    n_frac = normalize_to_100(
         n_frac,
-        simple_closure,
     )
 
 
-    o_frac = optional_normalize_to_100(
+    o_frac = normalize_to_100(
         o_frac,
-        simple_closure,
     )
 
 
@@ -2849,21 +2842,6 @@ with tab_predict:
             expanded=False,
         ):
 
-            simple_closure = (
-                st.checkbox(
-                    "Simple 100% N/O closure",
-
-                    value=False,
-
-                    help=(
-                        "Keep OFF unless you "
-                        "intentionally want "
-                        "simple normalization."
-                    ),
-                )
-            )
-
-
             clip_adsorption = (
                 st.checkbox(
                     "Clip negative adsorption to 0",
@@ -2871,12 +2849,6 @@ with tab_predict:
                     value=True,
                 )
             )
-
-
-    simple_closure = locals().get(
-        "simple_closure",
-        False,
-    )
 
 
     clip_adsorption = locals().get(
@@ -2898,7 +2870,6 @@ with tab_predict:
                 rkoh_l,
                 tn,
                 rn_ac,
-                simple_closure=simple_closure,
             )
 
 
@@ -2940,7 +2911,6 @@ with tab_predict:
                 rkoh_l,
                 tn,
                 rn_ac,
-                simple_closure=simple_closure,
             )
 
 
